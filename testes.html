@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Teste carousel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta name="description" content="O fotógrafo ideal para registrar seus momentos com as melhores paisagens - (027) 98126-7457">
+  <meta name="keywords" content="fotografia, fotógrafo, lukas monteiro, vitória">
+  <meta name="author" content="Lukas Monteiro">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="testes.css" rel="stylesheet" type="text/css"/>
+  <style>
+      
+ 
+  </style>
+  
+  <script>
+      jQuery(document).ready(function($) { 
+    $(".scroll").click(function(event){        
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 600);
+   	});
+});
+
+$( window ).scroll(function() {
+    nScrollPosition = $( window ).scrollTop();
+    if(nScrollPosition>=100){
+         $( ".seta" ).css( "display", "block" );
+    }else{
+         $( ".seta" ).css( "display", "none" );
+    }
+});
+  </script>
+    </head>
+    
+    
+    <body>
+        <header>
+       
+            <nav class="navba" >
+                <div class="div">
+                <ul>
+                    <li class="texto-branco" id="topo"><a href="#">Home</a></li>
+                    <li><a href="testes.html#galeriahome" class="scroll">Galeria</a></li>
+                    <li><a href="testes.html#rodape1" class="scroll">Sobre Mim</a></li>
+                    <li><a href="testes.html#rodape2" class="scroll">Contato</a></li>
+              
+                </div>
+                
+                </ul>
+
+
+                      
+                </nav>
+<section id="hometext">
+                          <img src="img/LOGOS-MATHEUS.fw.png" alt="logo" id="logotop" >
+                     <h1>Lukas Fotografia</h1>
+                         <h4>Fotógrafo de casamento, ensaios, pré wedding, book, formaturas e família</h4>
+                      </section>
+           </header>
+        
+        <div class="container" style="width:100%; padding:0px; " id="slideshow">
+  <!--<h2>Carousel Example</h2>-->  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="" >
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" >
+      <div class="item active" id="tamanho" >
+          <img src="img/casalopcao.jpg" alt="Los Angeles" style=" height: 980px; width: 100%;  "> <!--dimensão planejada 1024x620-->
+          <div class="carousel-caption legenda">
+          <h3>Kamilla e Adcley</h3>
+          <p>Confira as fotos do casal!</p></a>
+        </div>
+      </div>
+
+      <div class="item" id="tamanho">
+          <img src="img/PaisagemNaturalpb3.jpg" alt="Chicago" style=" height: 980px;width: 100%;  ">
+          <div class="carousel-caption "> 
+          <h3>Veja nosso Álbum de paisagens</h3>
+          <p>Faça também a sua sessão de fotos de casamento</p></a>
+        </div>
+      </div>
+    
+      <div class="item" id="tamanho">
+          <img src="img/testecarousel2.jpg" alt="New york" style="height: 980px;width: 100%;  ">
+          <div class="carousel-caption ">
+          <h3>Família Barbosa</h3>
+          <p>Preços promocionais para álbuns de família</p></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+<!--    <a class="left carousel-control" href="#myCarousel" data-slide="prev" >
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next" >
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Próximo</span>
+    </a>-->
+  </div>
+</div>
+        
+        
+        <main>
+
+        <section id="galeriahome">
+                   <h3>Projetos Recentes</h3>
+                   <!--///////////-->
+                   <div class="row" id="lightbox">
+<!--                        <i class="material-icons setaS"
+                          style="color: white;        size: 45px;        border: 3px solid white;        border-radius: 45px; float: left">keyboard_arrow_left</i>-->
+  <div class="column">
+    <img src="img/img_nature_wide.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/img_fjords_wide.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/img_mountains_wide.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/img_lights_wide.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+                        <i class="material-icons setaS"
+                          <!--style="color: white;        size: 45px;        border: 3px solid white;        border-radius: 45px; float: right;"> keyboard_arrow_right</i>-->
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="img/img_nature_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="img/img_fjords_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="img/img_mountains_wide.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="img/img_lights_wide.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+        <img class="demo cursor" src="img/img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/img_fjords_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+                   <!--/////////////////////////////////////-->
+                   <figure id="figurehome">
+<!--                       <i class="material-icons setaS"
+                          style="color: white;        size: 45px;        border: 3px solid white;        border-radius: 45px; float: left">keyboard_arrow_left</i>-->
+                          <!--////////////////-->
+                          
+                          
+                            <!--///////////-->
+<!--                   <div class="row" id="lightbox">
+  <div class="column">
+    <img src="img/img_nature_wide.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/img_fjords_wide.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/img_mountains_wide.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/img_lights_wide.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>-->
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="img/img_nature_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="img/img_fjords_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="img/img_mountains_wide.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="img/img_lights_wide.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+        <img class="demo cursor" src="img/img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/img_fjords_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+                   <!--/////////////////////////////////////-->
+                          
+                          
+                          
+                          
+<!--                       <img src="img/fotocasal1.jpg" class="fotohome" id="primeirafoto">
+                       <img src="img/fotocasal2.jpg" class="fotohome">
+                       <img src="img/fotocasal6.jpg" class="fotohome">
+                       <img src="img/fotocasal4.jpg" class="fotohome">
+                       <img src="img/fotocasal3.jpg" class="fotohome">
+                       <img src="img/fotocasal5.jpg" class="fotohome">-->
+<!--                       <i class="material-icons setaS"
+                          style="color: white;        size: 45px;        border: 3px solid white;        border-radius: 45px; float: right;"> keyboard_arrow_right</i>-->
+                   </figure>
+                   <a href="#" class="link-galeria">Ver mais Paisagens</a> <a href="#" class="link-galeria" style=" float: right">Ver outros Álbuns</a>
+               </section>
+        <div class="pxpx">lalala</div>    
+        
+         <section id="depoimentossection">
+                   <h2>Depoimentos</h2>
+                   
+                   <section class="depo-foto "><img src="img/foto-radius1.fw.png" style="float: right" class="radius-foto foto-centro1"></section>
+                   <section class="depo-text ">
+                       <article class="txt-dir"> “Deixa eu contar uma história rápida. 
+                           Antes de contratar o Lucas, tinhamos contratado
+outra equipe de fotografia e não era o que sonhávamos. Faltando 2 meses para o nosso casamento tivemos a coragem de cancelar
+o contrato com o tal fornecedor e pagar uma multa salgada. 
+Na busca de novos profissionais, conhecemos o Lucas e nos apaixonamos, era exatamente o que queríamos!
+Cancelariamos quantas vezes fossem necessário para que ele fosse o “NOSSO FOTÓGRAFO”
+Só temos a agradecer e parabenizar esse grande profissional que brilha em suas atuações. 
+Estamos muito felizes pelo resultado do dia mais especial de nossas vidas. Temos a certeza que lembraremos do nosso dia com as melhores fotografias que poderíamos ter.”
+- KAMILLA E ADCLEY</article>
+                   </section>
+                   <br>
+                   
+                   <section class="depo-text fundo-preto">
+                       <article class="txt-esq"><p>“Quem faria as fotos do nosso casamento foi a primeira coisa que
+                         pesquisamos assim que começamos o planejamento, por consideramos um dos principais itens
+                         para o grande dia, e realmente é!  Foi a melhor escolha. As fotos pré, pós, making off e do
+                         casamento em si ficaram PERFEITAS, o que não podia ser diferente. Sempre nos deixaram
+                         muuuuuuuuuuuuuito a vontade e nos ajudavam com tudo. Os mínimos detalhes foram registrados
+                         e consigo sentir a emoção daquele dia tão mágico quando fico horas vendo as fotos.
+                         O tratamento, a atenção, o cuidado, o profissionalismo, tudo absolutamente impecável.
+                         Não há uma pessoa que não chegue pra mim em diga “Nossa, as fotos do seu casamento ficaram
+                         perfeitas!”. Com toda certeza superaram as nossas expectativas.”
+                         - AMANDA E PEDRO</p></article>
+                   </section>
+                   <section class="depo-foto fundo-preto"><img src="img/foto-radius2.fw.png" class="radius-foto foto-centro2">
+                   </section>
+                   
+                   <br>
+                   <section class="depo-foto fundo-cinza_grad"><img src="img/foto-radius3.fw.png" style="float: right" class="radius-foto">
+                   </section>
+                   <section class="depo-text fundo-cinza_grad">
+                 <article class="txt-dir texto-centro">    “Só temos a agradecer esse fotógrafo e sua equipe que fez
+                     com que o nosso sonho ficasse ainda mais lindo. Profissionais competentes, atenciosos
+                     e melhor de tudo, criativos. Obrigado pelo trabalho de primeiríssima qualidade! 
+                     Carolina e Emerson” - CAROLINA E EMERSON</article>
+                    
+                   </section>
+                                                   
+               
+               </section>
+<!--        <section id="quem">
+            <div class="row">
+                <div class="card">
+                    <img src="img/lucas-radius.jpg" alt="John" style="width:100%">
+  <h1>Lucas </h1>
+  <p class="title">Fotógrafo</p>
+  <p>Formado em fotografia - Especializado em paisagens</p>
+  <p>Senac-ES</p>
+  <a href="#"><i class="fa fa-instagram"></i></a> 
+  <a href="#"><i class="fa fa-twitter"></i></a> 
+  <a href="#"><i class="fa fa-whatsapp"></i></a> 
+  <a href="#"><i class="fa fa-facebook"></i></a> 
+  <p><button><a href="testes.html#rodape2">Contact</a></button></p>
+</div>
+            </div>
+            
+        </section>-->
+<a href="testes.html#topo" class="scroll seta" id="seta"><img src="img/seta.fw.png" ></a>
+         </main>
+               
+               
+               
+               
+               
+               
+               <footer>
+                   <br>
+                   <section class="rodape1" id="rodape1"><hr>
+<!--                       98126-7457<br>
+                       lucasfotografia@outlook.com<br><br>
+                       <a href="#" class="fa fa-facebook"></a>
+                       <a href="#" class="fa fa-instagram"></a>
+                       <a href="#" class="fa fa-whatsapp"></a>
+                       -->
+                        <section id="quem">
+            <div class="row">
+                <div class="card">
+                    <img src="img/lucas-radius.jpg" alt="John" style="width:100%">
+  <h1>Lukas Monteiro </h1>
+  <p class="title">Fotógrafo</p>
+  <p id="formation">Formado em fotografia <br> Especializado em paisagens</p>
+  <p>Senac-ES</p>
+  <span> 98126-7457<br>
+                       lukasfotografia@outlook.com</span><br><br>
+  <a href="https://www.instagram.com/?hl=pt-br"><i class="fa fa-instagram"></i></a> 
+  <!--<a href="#"><i class="fa fa-twitter"></i></a>--> 
+  <a href="https://web.whatsapp.com/%F0%9F%8C%90/pt-br"><i class="fa fa-whatsapp"></i></a> 
+  <a href="https://pt-br.facebook.com/"><i class="fa fa-facebook"></i></a> 
+  <!--<p><button><a href="testes.html#rodape2" class="link-branco">Contato</a></button></p>-->
+</div>
+            </div>
+            
+        </section><hr>
+                   </section>
+                   <br>
+                   
+                   <section class="rodape2" id="rodape2">
+                       
+                       <h2> Fale Conosco</h2>
+                       <h3>Faça seu orçamento ou envie sua dúvida, é um prazer responder a todos :)</h3>
+                       <form>
+                           <input type="text" placeholder="Nome/Empresa"><br><br>
+                           <input type="email" placeholder="Email"><br><br>
+                           <input type="tel" placeholder="Tel: xx xxxx-xxxx"><br><br>
+                           <input type="text" placeholder="Assunto"><br><br>
+                           <input type="text" id="msg" placeholder="Mensagem"><br><br>
+                           <input type="submit" value="Enviar" id="submit">
+                       </form>
+                                     
+                   
+                   </section>
+                   
+                  
+                   
+                   
+               </footer>
+ <section id="barra">
+     Copyright © 2017 - Site feito por <span class="txt-laranja">Matheus Sites</span>- www.lukasfotografia.com.br
+                   </section>
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+        
+        
+        
+    </body>
+</html>

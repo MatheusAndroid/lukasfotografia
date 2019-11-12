@@ -1,0 +1,111 @@
+/*max 640px de largura*/
+
+#slideshow{
+    height: 250px !important;
+}
+
+.foto-slide{
+    height: 250px !important;
+    width: 100%;
+        
+}
+
+#myCarousel{
+    height: 250px !important;
+}
+
+.carousel-inner {
+    /*height: 652px !important;*/
+}
+
+.item {
+    height: 250px ;
+    position: absolute;
+    
+}
+.tamanho{
+    height: 250px ;
+}
+
+.carousel{
+    height: 250px;
+}
+
+img#logotop{
+    height: 35px;
+    width: 35px;
+} 
+
+.carousel-caption{
+    visibility: hidden;
+}
+
+#hometext h1 {
+  font-size: 1.4em;
+
+}
+
+#hometext h4 {
+  font-size: 1em;  
+}
+
+#hometext{
+     position: absolute;
+    top: 50px;
+}
+
+#galeriahome{
+    position: absolute;
+    top: 250px;
+    height: 220px;
+}
+a.link-galeria{
+    width: 50%;
+    padding: 25px 25px;
+    position: relative;
+    top: 22px;
+    
+    float: none !important;
+}
+
+    /*///////////////card*/
+    .card {
+        position: absolute;
+    top: 2400px;
+    left: 8%;
+    width: 360px;
+    
+    
+    }
+    
+    #depoimentossection{
+    position: absolute;
+    top: 480px;
+}
+    
+.depo-foto{
+    width: 50%;
+    width: 0%;
+    visibility: hidden;
+}
+.radius-foto{
+    height: 200px;
+    width: 0%;
+    visibility: hidden;
+}
+.txt-dir{
+    width: 90%;
+}
+.txt-esq{
+    width: 90%;
+}
+.depo-text{ 
+    width: 100% !important;
+    height: 520px;
+    
+}
+
+
+.rodape2 {
+    height: 700px;
+}
